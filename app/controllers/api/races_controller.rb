@@ -2,8 +2,6 @@
 module Api
 	class RacesController < ApplicationController
 
-#	  before_action :set_race, only: [:show, :edit, :update, :destroy]
-
 	  # GET /api/races
 	  # GET /api/races.json
 	  def index

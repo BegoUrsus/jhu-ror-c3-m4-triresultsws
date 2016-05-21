@@ -1,8 +1,6 @@
 # solution/app/controllers/api/racers_controller.rb
 module Api
 	class RacersController < ApplicationController
-	
-#	  before_action :set_race, only: [:show, :edit, :update, :destroy]
 
 	  # GET /api/racers
 	  # GET /api/racers.json

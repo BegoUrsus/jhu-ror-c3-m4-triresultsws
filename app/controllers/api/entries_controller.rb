@@ -1,8 +1,6 @@
 # solution/app/controllers/api/entries_controller.rb
 module Api
 	class EntriesController < ApplicationController
-	
-#	  before_action :set_race, only: [:show, :edit, :update, :destroy]
 
 	  # GET api/racers/:racer_id/entries
 	  # GET api/racers/:racer_id/entries.json
