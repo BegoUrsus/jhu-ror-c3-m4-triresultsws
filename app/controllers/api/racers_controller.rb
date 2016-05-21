@@ -6,7 +6,7 @@ module Api
 	  # GET /api/racers.json
 	  def index
 			if !request.accept || request.accept == "*/*"
-				render plain: api_racers_path
+				render plain: api_racers_path, status: :ok
 			else
 				#real implementation ...
 			end
@@ -16,7 +16,7 @@ module Api
 	  # GET /api/racers/1.json
 	  def show
 			if !request.accept || request.accept == "*/*"
-   			render plain: api_racer_path(params[:id])
+   			render plain: api_racer_path(params[:id]), status: :ok
 			else
 				#real implementation ...
 			end
