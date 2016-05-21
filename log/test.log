@@ -650,3 +650,17 @@ Processing by Api::RacesController#update as HTML
   Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"574096b6d57bf72054b6cc92"}
 Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.0ms)
   [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started DELETE "/api/races/57409970d57bf721644927e3" for 127.0.0.1 at 2016-05-21 19:22:56 +0200
+Processing by Api::RacesController#destroy as HTML
+  Parameters: {"id"=>"57409970d57bf721644927e3"}
+  Rendered text template (0.0ms)
+Completed 204 No Content in 21ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/57409db0d57bf715e8d1fd04" for 127.0.0.1 at 2016-05-21 19:41:04 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"57409db0d57bf715e8d1fd04"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 26ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction

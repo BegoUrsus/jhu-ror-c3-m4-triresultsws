@@ -2032,3 +2032,109 @@ MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"ra
 MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
 MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
 MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000987s
+
+
+Started PUT "/api/races/57408eccd57bf71c14522037" for ::1 at 2016-05-21 19:14:49 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"57408eccd57bf71c14522037"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001013s
+method=PUT
+MONGODB | localhost:27017 | triresults_development.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.update | SUCCEEDED | 0.001001s
+Completed 200 OK in 24ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001018s
+
+
+Started DELETE "/api/races/57408eccd57bf71c14522037" for ::1 at 2016-05-21 19:21:41 +0200
+Processing by Api::RacesController#destroy as */*
+  Parameters: {"id"=>"57408eccd57bf71c14522037"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001014s
+MONGODB | localhost:27017 | triresults_development.count | STARTED | {"count"=>"results", "query"=>{"race._id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.count | SUCCEEDED | 0.007023s
+MONGODB | localhost:27017 | triresults_development.delete | STARTED | {"delete"=>"results", "deletes"=>[{"q"=>{"race._id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "limit"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.delete | SUCCEEDED | 0.00402s
+MONGODB | localhost:27017 | triresults_development.delete | STARTED | {"delete"=>"races", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.delete | SUCCEEDED | 0.001013s
+  Rendered text template (0.0ms)
+Completed 204 No Content in 63ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001002s
+
+
+Started PUT "/api/races/foobar" for ::1 at 2016-05-21 19:23:51 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"foobar"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>"foobar"}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001001s
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Race with id(s) foobar.
+summary:
+  When calling Race.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): foobar ... (1 total) and the following ids were not found: foobar.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  app/controllers/api/races_controller.rb:65:in `set_race'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (351.3ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (321.4ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (732.9ms)
+
+
+Started PATCH "/api/races/foobar" for ::1 at 2016-05-21 19:25:47 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"foobar"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>"foobar"}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Race with id(s) foobar.
+summary:
+  When calling Race.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): foobar ... (1 total) and the following ids were not found: foobar.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  app/controllers/api/races_controller.rb:65:in `set_race'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (349.5ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (322.3ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (737.5ms)
+
+
+Started PATCH "/api/races/foobar" for ::1 at 2016-05-21 19:39:48 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"foobar"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>"foobar"}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001s
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 7ms (Views: 0.7ms | ActiveRecord: 0.0ms)

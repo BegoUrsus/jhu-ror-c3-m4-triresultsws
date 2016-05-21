@@ -4,6 +4,11 @@ module Api
 
 		before_action :set_race, only: [:show, :edit, :update, :destroy]
 
+
+		rescue_from Mongoid::Errors::DocumentNotFound do |exception|
+			render plain: "woops: cannot find race[#{params[:id]}]", status: :not_found
+		end
+
 	  # GET /api/races
 	  # GET /api/races.json
 	  def index
@@ -35,6 +40,8 @@ module Api
 				@race = Race.new(race_params);
 				if @race.save
 					render plain: race_params[:name], status: :created
+				else
+          render json: @race.errors
 				end
 			end
 		end
@@ -42,14 +49,22 @@ module Api
 	  # PATCH/PUT /api/races/1
 	  # PATCH/PUT /api/races/1.json
 	  def update
+	  	
+	  	# 	Rails.logger.debug("method=#{request.method}")
+	  	# 	request.method can be 'PATCH' or 'PUT'
+
 			if @race.update(race_params)
 				render json: @race, status: :ok
+			else
+        render json: @race.errors
 			end	  	
 	  end
 
 	  # DELETE /api/races/1
 	  # DELETE /api/races/1.json
 	  def destroy
+	  	@race.destroy
+	  	render :nothing=>true, :status => :no_content
 	  end
 
 
