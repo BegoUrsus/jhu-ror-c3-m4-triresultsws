@@ -1,0 +1,1781 @@
+Overwriting existing field _id in class RacerInfo.
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('57371552d57bf7030829ed7b')}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.147303s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('57371552d57bf7030829ed7b')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d'), "info"=>{"fn"=>"cat", "ln"=>"inhat", "g"=>"M", "yr"=>1940, "res"=>{:city=>"Oakland", :state=>"CA", :loc=>{:type=>"Point", :coordinates=>[-122.27, 37.8]}}, "racer_id...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.002002s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57373af6d57bf71698c4bf85'), "n"=>"Oakland 10K", "date"=>2016-05-14 00:00:00 UTC, "loc"=>{:city=>"Oakland", :state=>"CA", :loc=>{:type=>"Point", :coordinates=>[-122.27, 37.8]}}, "updated_at"=>20...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.154074s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57373b05d57bf71698c4bf86'), "n"=>"Oakland 10K", "date"=>2016-05-14 00:00:00 UTC, "loc"=>{:city=>"Oakland", :state=>"CA", :loc=>{:type=>"Point", :coordinates=>[-122.27, 37.8]}}, "updated_at"=>20...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57373b05d57bf71698c4bf86')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"Oakland 10K"}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57373af6d57bf71698c4bf85')}, "u"=>{"$set"=>{"updated_at"=>2016-05-14 15:29:43 UTC}, "$pushAll"=>{"events"=>[{"_id"=>BSON::ObjectId('57374435d57bf7182855a60f'), "o"=>0, "n"=>"swim", "d"=>1.0...
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57373af6d57bf71698c4bf85')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001013s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('573745e6d57bf70f187b8b0f'), "updated_at"=>2016-05-14 15:36:06 UTC, "created_at"=>2016-05-14 15:36:06 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('573745e6d57bf70f187b8b0f')}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('573745e6d57bf70f187b8b0f')}, "u"=>{"$push"=>{"events"=>{"_id"=>BSON::ObjectId('57374634d57bf70f187b8b11'), "o"=>0, "n"=>"swim"}}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('573745e6d57bf70f187b8b0f')}, "u"=>{"$set"=>{"updated_at"=>2016-05-14 15:37:24 UTC}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('573745e6d57bf70f187b8b0f')}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('573757c2d57bf712f0c7e9c6'), "n"=>"Yesterdays Challenge", "date"=>2016-05-13 00:00:00 UTC, "updated_at"=>2016-05-14 16:52:18 UTC, "created_at"=>2016-05-14 16:52:18 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.001501s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('573757cbd57bf712f0c7e9c7'), "n"=>"Todays Challenge", "date"=>2016-05-14 00:00:00 UTC, "updated_at"=>2016-05-14 16:52:27 UTC, "created_at"=>2016-05-14 16:52:27 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.000504s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('573757d5d57bf712f0c7e9c8'), "n"=>"Tomorrows Challenge", "date"=>2016-05-15 00:00:00 UTC, "updated_at"=>2016-05-14 16:52:37 UTC, "created_at"=>2016-05-14 16:52:37 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.00049s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$lt"=>2016-05-14 00:00:00 UTC}, "n"=>{"$regex"=>"Challenge"}}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.002705s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-14 00:00:00 UTC}, "n"=>{"$regex"=>"Challenge"}}, "projection"=>{"n"=>1, "date"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"results", "documents"=>[{"_id"=>BSON::ObjectId('573765c7d57bf711cc65f9f6'), "bib"=>0, "secs"=>100.123, "o"=>{:name=>nil, :place=>10}, "gender"=>{:name=>"M", :place=>8}, "group"=>{:name=>"masters", :place=>5}, "updated_at"=>2016-05-14 17:54...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.168677s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"_id"=>BSON::ObjectId('573765c7d57bf711cc65f9f6')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001002s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c'), "info"=>{"fn"=>"thing", "ln"=>"three", "g"=>"M", "yr"=>1960, "racer_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.025806s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0005s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('573860e2d57bf71f0401a82a'), "info"=>{"fn"=>"thing", "ln"=>"three", "g"=>"M", "yr"=>1960, "racer_id"=>BSON::ObjectId('573860e2d57bf71f0401a82a')}}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.001501s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('573860e2d57bf71f0401a82a')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0005s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('573860e2d57bf71f0401a82a')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0005s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('573861efd57bf71c5055af28'), "info"=>{"fn"=>"thing", "ln"=>"three", "g"=>"M", "yr"=>1960, "racer_id"=>BSON::ObjectId('573861efd57bf71c5055af28')}}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.001486s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('573861efd57bf71c5055af28')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"racers", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('573861efd57bf71c5055af28')}, "u"=>{"$set"=>{"info.res"=>{"city"=>"Oakland", "state"=>"CA", "loc"=>{"type"=>"Point", "coordinates"=>[0.0, 0.0]}}}}, "multi"=>false, "upsert"=>false}], "order...
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.000516s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('573861efd57bf71c5055af28')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.000515s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('573864e0d57bf70f6469e457'), "updated_at"=>2016-05-15 12:00:47 UTC, "created_at"=>2016-05-15 12:00:47 UTC, "events"=>[{"_id"=>BSON::ObjectId('573864efd57bf70f6469e458'), "o"=>4, "n"=>"run", "d"=...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.020168s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('573864e0d57bf70f6469e457')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.000989s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('573864e0d57bf70f6469e457')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57386549d57bf70f6469e45b'), "updated_at"=>2016-05-15 12:02:20 UTC, "created_at"=>2016-05-15 12:02:20 UTC, "events"=>[{"_id"=>BSON::ObjectId('5738654cd57bf70f6469e45c'), "o"=>0, "n"=>"swim", "d"...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57386549d57bf70f6469e45b')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001s
+MONGODB | Adding localhost:27017 to the cluster.
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57386c8fd57bf713f863d69e'), "next_bib"=>0, "updated_at"=>2016-05-15 12:33:19 UTC, "created_at"=>2016-05-15 12:33:19 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.001013s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57386c8fd57bf713f863d69e')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.003727s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57386c8fd57bf713f863d69e')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+Overwriting existing field _id in class RacerInfo.
+Overwriting existing field _id in class RacerInfo.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57387058d57bf7164879d18c'), "next_bib"=>0, "n"=>"A Race", "date"=>2016-05-15 00:00:00 UTC, "updated_at"=>2016-05-15 12:49:28 UTC, "created_at"=>2016-05-15 12:49:28 UTC, "events"=>[{"_id"=>BSON:...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.011019s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"info.fn"=>"cat", "info.ln"=>"inhat"}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}, "sort"=>{"race.date"=>-1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0019909999999999997s
+MONGODB | localhost:27017 | triresults_test.count | STARTED | {"count"=>"results", "query"=>{"racer.racer_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}}
+MONGODB | localhost:27017 | triresults_test.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.count | STARTED | {"count"=>"results", "query"=>{"race._id"=>BSON::ObjectId('57387058d57bf7164879d18c')}}
+MONGODB | localhost:27017 | triresults_test.count | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57387058d57bf7164879d18c')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"results", "documents"=>[{"_id"=>BSON::ObjectId('573870bcd57bf7164879d19c'), "group"=>{:name=>"masters M", :place=>nil}, "secs"=>0.0, "bib"=>1, "updated_at"=>2016-05-15 12:51:08 UTC, "created_at"=>2016-05-15 12:51:08 UTC, "results"=>[{"_id"...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.069188s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57387058d57bf7164879d18c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('57387058d57bf7164879d18c')}, "sort"=>{"secs"=>1, "bib"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0005s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}, "sort"=>{"race.date"=>-1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('5738730ad57bf71c2883df49'), "next_bib"=>0, "n"=>"Yesterdays Entrant", "date"=>2016-05-14 00:00:00 UTC, "updated_at"=>2016-05-15 13:00:58 UTC, "created_at"=>2016-05-15 13:00:58 UTC}], "ordered"=...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57387314d57bf71c2883df4a'), "next_bib"=>0, "n"=>"Todays Entrant", "date"=>2016-05-15 00:00:00 UTC, "updated_at"=>2016-05-15 13:01:08 UTC, "created_at"=>2016-05-15 13:01:08 UTC}], "ordered"=>tru...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('5738731dd57bf71c2883df4b'), "next_bib"=>0, "n"=>"Tomorrows Entrant", "date"=>2016-05-16 00:00:00 UTC, "updated_at"=>2016-05-15 13:01:17 UTC, "created_at"=>2016-05-15 13:01:17 UTC}], "ordered"=>...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+Overwriting existing field _id in class RacerInfo.
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"racers", "documents"=>[{"_id"=>BSON::ObjectId('57387329d57bf71c2883df4c'), "info"=>{"fn"=>"thing", "ln"=>"two", "g"=>"M", "yr"=>1960, "racer_id"=>BSON::ObjectId('57387329d57bf71c2883df4c')}}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5738730ad57bf71c2883df49')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"results", "documents"=>[{"_id"=>BSON::ObjectId('57387334d57bf71c2883df4d'), "group"=>{:name=>"50 to 59 (M)", :place=>nil}, "bib"=>1, "updated_at"=>2016-05-15 13:01:40 UTC, "created_at"=>2016-05-15 13:01:40 UTC, "race"=>{"_id"=>BSON::Object...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57387314d57bf71c2883df4a')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"results", "documents"=>[{"_id"=>BSON::ObjectId('5738733fd57bf71c2883df4e'), "group"=>{:name=>"50 to 59 (M)", :place=>nil}, "bib"=>1, "updated_at"=>2016-05-15 13:01:51 UTC, "created_at"=>2016-05-15 13:01:51 UTC, "race"=>{"_id"=>BSON::Object...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5738731dd57bf71c2883df4b')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_test.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.insert | STARTED | {"insert"=>"results", "documents"=>[{"_id"=>BSON::ObjectId('57387346d57bf71c2883df4f'), "group"=>{:name=>"50 to 59 (M)", :place=>nil}, "bib"=>1, "updated_at"=>2016-05-15 13:01:58 UTC, "created_at"=>2016-05-15 13:01:58 UTC, "race"=>{"_id"=>BSON::Object...
+MONGODB | localhost:27017 | triresults_test.insert | SUCCEEDED | 0.001014s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57371552d57bf7030829ed7b'), "race.date"=>{"$gte"=>2016-05-15 00:00:00 UTC}}, "sort"=>{"race.date"=>-1}, "projection"=>{"race"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-15 00:00:00 UTC}, "_id"=>{"$nin"=>[]}}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57371552d57bf7030829ed7b'), "race.date"=>{"$gte"=>2016-05-15 00:00:00 UTC}}, "sort"=>{"race.date"=>-1}, "projection"=>{"race"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-15 00:00:00 UTC}, "_id"=>{"$nin"=>[]}}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57371552d57bf7030829ed7b'), "race.date"=>{"$gte"=>2016-05-15 00:00:00 UTC}}, "sort"=>{"race.date"=>-1}, "projection"=>{"race"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-15 00:00:00 UTC}, "_id"=>{"$nin"=>[]}}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57371552d57bf7030829ed7b'), "race.date"=>{"$gte"=>2016-05-15 00:00:00 UTC}}, "sort"=>{"race.date"=>-1}, "projection"=>{"race"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-15 00:00:00 UTC}, "_id"=>{"$nin"=>[]}}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57371552d57bf7030829ed7b'), "race.date"=>{"$gte"=>2016-05-15 00:00:00 UTC}}, "sort"=>{"race.date"=>-1}, "projection"=>{"race"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-15 00:00:00 UTC}, "_id"=>{"$nin"=>[]}}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+Started GET "/racers" for 127.0.0.1 at 2016-05-15 17:18:05 +0200
+Processing by RacersController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.00299s
+Overwriting existing field _id in class RacerInfo.
+  Rendered racers/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 362ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" for 127.0.0.1 at 2016-05-15 17:18:06 +0200
+Started GET "/assets/application-c32f7b43ef73cc850befd1856d8b4e067c4ed248e90b4ea4793762b7bb4642f2.js" for ::1 at 2016-05-15 17:18:06 +0200
+Started GET "/racers/5737162cd57bf7177c3cf71d" for ::1 at 2016-05-15 17:18:11 +0200
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5737162cd57bf7177c3cf71d"}
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('5737162cd57bf7177c3cf71d')}, "sort"=>{"race.date"=>-1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.000988s
+  Rendered racers/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 34ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+Started GET "/races/57387058d57bf7164879d18c" for ::1 at 2016-05-15 17:18:16 +0200
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"57387058d57bf7164879d18c"}
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57387058d57bf7164879d18c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001016s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('57387058d57bf7164879d18c')}, "sort"=>{"secs"=>1, "last_name"=>1, "first_name"=>1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+  Rendered races/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers/57385f08d57bf70cac20ef1c" for ::1 at 2016-05-15 17:18:35 +0200
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"57385f08d57bf70cac20ef1c"}
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}, "sort"=>{"race.date"=>-1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001001s
+  Rendered racers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers/57385f08d57bf70cac20ef1c" for ::1 at 2016-05-15 17:18:42 +0200
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"57385f08d57bf70cac20ef1c"}
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{"_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"results", "filter"=>{"racer.racer_id"=>BSON::ObjectId('57385f08d57bf70cac20ef1c')}, "sort"=>{"race.date"=>-1}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.0s
+  Rendered racers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Started GET "/racers" for ::1 at 2016-05-15 17:19:37 +0200
+Processing by RacersController#index as HTML
+MONGODB | localhost:27017 | triresults_test.find | STARTED | {"find"=>"racers", "filter"=>{}}
+MONGODB | localhost:27017 | triresults_test.find | SUCCEEDED | 0.001s
+  Rendered racers/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Overwriting existing field _id in class RacerInfo.
+Started GET "/api/races/57402d2cd57bf717ccb4a8d4/results" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/57402d2cd57bf717ccb4a8d4/results"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/caching_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/caching_spec.rb:24:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/57402d2fd57bf717ccb4ab04" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [PUT] "/api/races/57402d2fd57bf717ccb4ab04"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:76:in `put'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `put'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:97:in `put'
+  spec/errors_spec.rb:34:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/errors_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started POST "/api/races" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [POST] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `post'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:96:in `post'
+  spec/methods_spec.rb:33:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/methods_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races?offset=10&limit=50" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/params_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/params_spec.rb:17:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/57402d2fd57bf717ccb4ab05" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/57402d2fd57bf717ccb4ab05"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/representations_spec.rb:32:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/representations_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/57402d2fd57bf717ccb4ab06/results/57402d2fd57bf717ccb4ad00" for 127.0.0.1 at 2016-05-21 11:41:03 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/57402d2fd57bf717ccb4ab06/results/57402d2fd57bf717ccb4ad00"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/resources_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/resources_spec.rb:22:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Overwriting existing field _id in class RacerInfo.
+Started GET "/api/races/574030aed57bf70fc83d2137/results" for 127.0.0.1 at 2016-05-21 11:56:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/574030aed57bf70fc83d2137/results"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/caching_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/caching_spec.rb:24:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/574030b1d57bf70fc83d2367" for 127.0.0.1 at 2016-05-21 11:56:01 +0200
+
+ActionController::RoutingError (No route matches [PUT] "/api/races/574030b1d57bf70fc83d2367"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:76:in `put'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `put'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:97:in `put'
+  spec/errors_spec.rb:34:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/errors_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Started POST "/api/races" for 127.0.0.1 at 2016-05-21 11:56:01 +0200
+
+ActionController::RoutingError (No route matches [POST] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `post'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:96:in `post'
+  spec/methods_spec.rb:33:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/methods_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races?offset=10&limit=50" for 127.0.0.1 at 2016-05-21 11:56:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/params_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/params_spec.rb:17:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/574030b1d57bf70fc83d2368" for 127.0.0.1 at 2016-05-21 11:56:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/574030b1d57bf70fc83d2368"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/representations_spec.rb:32:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/representations_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/574030b1d57bf70fc83d2369/results/574030b2d57bf70fc83d2563" for 127.0.0.1 at 2016-05-21 11:56:02 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/574030b1d57bf70fc83d2369/results/574030b2d57bf70fc83d2563"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/resources_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/resources_spec.rb:22:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Overwriting existing field _id in class RacerInfo.
+Started GET "/api/races/5740316cd57bf718e0f81ac0/results" for 127.0.0.1 at 2016-05-21 11:59:10 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/5740316cd57bf718e0f81ac0/results"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/caching_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/caching_spec.rb:24:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/5740316ed57bf718e0f81cf0" for 127.0.0.1 at 2016-05-21 11:59:10 +0200
+
+ActionController::RoutingError (No route matches [PUT] "/api/races/5740316ed57bf718e0f81cf0"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:76:in `put'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `put'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:97:in `put'
+  spec/errors_spec.rb:34:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/errors_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started POST "/api/races" for 127.0.0.1 at 2016-05-21 11:59:10 +0200
+
+ActionController::RoutingError (No route matches [POST] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:67:in `post'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `post'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:96:in `post'
+  spec/methods_spec.rb:33:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/methods_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races?offset=10&limit=50" for 127.0.0.1 at 2016-05-21 11:59:10 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/params_spec.rb:30:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/params_spec.rb:17:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/5740316fd57bf718e0f81cf1" for 127.0.0.1 at 2016-05-21 11:59:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/5740316fd57bf718e0f81cf1"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/representations_spec.rb:32:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/representations_spec.rb:21:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/5740316fd57bf718e0f81cf2/results/5740316fd57bf718e0f81eec" for 127.0.0.1 at 2016-05-21 11:59:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/api/races/5740316fd57bf718e0f81cf2/results/5740316fd57bf718e0f81eec"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/urlmap.rb:66:in `block in call'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `each'
+  rack (1.6.4) lib/rack/urlmap.rb:50:in `call'
+  rack-test (0.6.3) lib/rack/mock_session.rb:30:in `request'
+  rack-test (0.6.3) lib/rack/test.rb:244:in `process_request'
+  rack-test (0.6.3) lib/rack/test.rb:58:in `get'
+  E:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/forwardable.rb:183:in `get'
+  capybara (2.7.1) lib/capybara/rack_test/driver.rb:95:in `get'
+  spec/resources_spec.rb:38:in `block (3 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:236:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `block in with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `block in with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:618:in `block in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  spec/resources_spec.rb:22:in `block (2 levels) in <top (required)>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-rails (3.4.2) lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:425:in `instance_exec'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:389:in `execute_with'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:620:in `block (2 levels) in run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:320:in `call'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:621:in `run_around_example_hooks_for'
+  rspec-core (3.4.4) lib/rspec/core/hooks.rb:478:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:435:in `with_around_example_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:478:in `with_around_and_singleton_context_hooks'
+  rspec-core (3.4.4) lib/rspec/core/example.rb:233:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:581:in `block in run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:577:in `run_examples'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:543:in `run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `block in run'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `map'
+  rspec-core (3.4.4) lib/rspec/core/example_group.rb:544:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (3 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `map'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:119:in `block (2 levels) in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/configuration.rb:1680:in `with_suite_hooks'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:118:in `block in run_specs'
+  rspec-core (3.4.4) lib/rspec/core/reporter.rb:77:in `report'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:117:in `run_specs'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:93:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:78:in `run'
+  rspec-core (3.4.4) lib/rspec/core/runner.rb:45:in `invoke'
+  rspec-core (3.4.4) exe/rspec:4:in `<top (required)>'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `load'
+  E:/RailsInstaller/Ruby2.2.0/bin/rspec:22:in `<main>'
+
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
