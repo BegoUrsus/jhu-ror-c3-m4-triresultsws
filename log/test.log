@@ -238,3 +238,9 @@ ActionController::RoutingError (No route matches [GET] "/api/races/abc/foo/def")
 
 
   [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started POST "/api/races" for 127.0.0.1 at 2016-05-21 14:40:35 +0200
+Processing by Api::RacesController#create as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 18ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction

@@ -22,5 +22,5 @@ module Api
 			end
 	  end
 
-	end
-end
+  end #class RacersController
+end #module Api
