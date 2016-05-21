@@ -1811,3 +1811,97 @@ NoMethodError (undefined method `[]' for nil:NilClass):
   Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (700.2ms)
+
+
+Started POST "/api/races" for ::1 at 2016-05-21 18:26:25 +0200
+
+SyntaxError (E:/RoRSites/triresultsws/app/controllers/api/races_controller.rb:49: syntax error, unexpected ':', expecting keyword_end
+	  private:
+	          ^
+E:/RoRSites/triresultsws/app/controllers/api/races_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/api/races_controller.rb:49: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/api/races_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (330.8ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (302.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (689.9ms)
+
+
+Started POST "/api/races" for ::1 at 2016-05-21 18:27:46 +0200
+
+SyntaxError (E:/RoRSites/triresultsws/app/controllers/api/races_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/api/races_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (328.3ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (300.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (691.0ms)
+
+
+Started POST "/api/races" for ::1 at 2016-05-21 18:28:47 +0200
+Processing by Api::RacesController#create as TEXT
+  Parameters: {"race"=>{"name"=>"First Race", "date"=>"2016-05-21"}}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 201 Created in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race"}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+
+
+Started POST "/api/races" for ::1 at 2016-05-21 18:36:40 +0200
+
+SyntaxError (E:/RoRSites/triresultsws/app/controllers/api/races_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/api/races_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (329.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (300.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (693.5ms)
+
+
+Started POST "/api/races" for ::1 at 2016-05-21 18:37:32 +0200
+Processing by Api::RacesController#create as TEXT
+  Parameters: {"race"=>{"name"=>"First Race", "date"=>"2016-05-21"}}
+Can't verify CSRF token authenticity
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_development.insert | STARTED | {"insert"=>"races", "documents"=>[{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037'), "next_bib"=>0, "n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC, "updated_at"=>2016-05-21 16:37:32 UTC, "created_at"=>2016-05-21 16:37:32 UTC}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.insert | SUCCEEDED | 0.002242s
+  Rendered text template (0.0ms)
+Completed 201 Created in 30ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001019s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000999s
