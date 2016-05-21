@@ -6,7 +6,8 @@ module Api
 	  # GET /api/races.json
 	  def index
 			if !request.accept || request.accept == "*/*"
-   			render plain: api_races_path
+   			#render plain: api_races_path
+   			render plain: "#{api_races_path}, offset=[#{params[:offset]}], limit=[#{params[:limit]}]"
 			else
 				#real implementation ...
 			end
