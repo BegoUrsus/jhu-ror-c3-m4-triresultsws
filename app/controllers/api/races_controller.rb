@@ -21,7 +21,7 @@ module Api
    			render plain: api_race_path(params[:id]), status: :ok
 			else
 				#real implementation ...
-				render json: @race
+				render json: @race, status: :ok
 			end
 	  end
 
@@ -35,8 +35,6 @@ module Api
 				@race = Race.new(race_params);
 				if @race.save
 					render plain: race_params[:name], status: :created
-				else
-					render plain: "couldn't save"
 				end
 			end
 		end
@@ -44,6 +42,9 @@ module Api
 	  # PATCH/PUT /api/races/1
 	  # PATCH/PUT /api/races/1.json
 	  def update
+			if @race.update(race_params)
+				render json: @race, status: :ok
+			end	  	
 	  end
 
 	  # DELETE /api/races/1

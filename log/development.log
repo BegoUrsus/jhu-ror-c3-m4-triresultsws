@@ -1962,3 +1962,73 @@ MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001s
 MONGODB | localhost:27017 | triresults_development.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
 MONGODB | localhost:27017 | triresults_development.update | SUCCEEDED | 0.0s
 Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started HEAD "/api/races/57408eccd57bf71c14522037" for ::1 at 2016-05-21 18:57:56 +0200
+Processing by Api::RacesController#show as JSON
+  Parameters: {"id"=>"57408eccd57bf71c14522037"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.update | SUCCEEDED | 0.001001s
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started HEAD "/api/races/bogus" for ::1 at 2016-05-21 18:58:29 +0200
+Processing by Api::RacesController#show as JSON
+  Parameters: {"id"=>"bogus"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>"bogus"}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000991s
+Completed 404 Not Found in 3ms (ActiveRecord: 0.0ms)
+
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Race with id(s) bogus.
+summary:
+  When calling Race.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): bogus ... (1 total) and the following ids were not found: bogus.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  app/controllers/api/races_controller.rb:58:in `set_race'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (330.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (302.3ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (690.5ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"n"=>"First Race", "date"=>2016-05-21 00:00:00 UTC}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001017s
+
+
+Started PUT "/api/races/57408eccd57bf71c14522037" for ::1 at 2016-05-21 19:03:09 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"57408eccd57bf71c14522037"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000999s
+  Rendered text template (1.0ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/api/races/57408eccd57bf71c14522037" for ::1 at 2016-05-21 19:10:32 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"57408eccd57bf71c14522037"}
+Can't verify CSRF token authenticity
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "u"=>{"$set"=>{"n"=>"Modified Race", "updated_at"=>2016-05-21 17:10:33 UTC}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.update | STARTED | {"update"=>"races", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}, "u"=>{"$inc"=>{"next_bib"=>1}}, "multi"=>false, "upsert"=>false}], "ordered"=>true}
+MONGODB | localhost:27017 | triresults_development.update | SUCCEEDED | 0.0s
+Completed 200 OK in 25ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('57408eccd57bf71c14522037')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000987s

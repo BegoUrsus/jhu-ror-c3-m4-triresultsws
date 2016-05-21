@@ -637,3 +637,16 @@ Processing by Api::RacesController#show as JSON
   Parameters: {"id"=>"5740934cd57bf70ffc5061e0"}
 Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/574095ffd57bf71b0087d373" for 127.0.0.1 at 2016-05-21 19:08:15 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"574095ffd57bf71b0087d373"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started PUT "/api/races/574096b6d57bf72054b6cc92" for 127.0.0.1 at 2016-05-21 19:11:18 +0200
+Processing by Api::RacesController#update as HTML
+  Parameters: {"race"=>{"name"=>"Modified Race", "date"=>"2016-05-21"}, "id"=>"574096b6d57bf72054b6cc92"}
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  rollback transaction
