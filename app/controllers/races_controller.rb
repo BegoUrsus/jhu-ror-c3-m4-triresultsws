@@ -14,9 +14,6 @@ class RacesController < ApplicationController
       .where(:"race._id" => @race.id)
       .order(secs: :asc, last_name: :asc, first_name: :asc)
   end
-  def set_race
-    @race = Race.find(params[:id])
-  end
 
   # GET /races/new
   def new

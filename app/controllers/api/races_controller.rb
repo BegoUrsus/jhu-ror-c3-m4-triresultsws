@@ -2,6 +2,8 @@
 module Api
 	class RacesController < ApplicationController
 
+		before_action :set_race, only: [:show, :edit, :update, :destroy]
+
 	  # GET /api/races
 	  # GET /api/races.json
 	  def index
@@ -19,6 +21,7 @@ module Api
    			render plain: api_race_path(params[:id]), status: :ok
 			else
 				#real implementation ...
+				render json: @race
 			end
 	  end
 
@@ -50,6 +53,11 @@ module Api
 
 
 	  private
+			# Use callbacks to share common setup or constraints between actions.
+    	def set_race
+      	@race = Race.find(params[:id])
+    	end
+
       # Never trust parameters from the scary internet, only allow the white list through.
 	    def race_params
 	      params.require(:race).permit(:name, :date)

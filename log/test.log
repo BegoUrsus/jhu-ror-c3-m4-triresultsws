@@ -631,3 +631,9 @@ Processing by Api::RacesController#create as plain/text
   Rendered text template (0.0ms)
 Completed 201 Created in 43ms (Views: 7.9ms | ActiveRecord: 0.0ms)
   [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/api/races/5740934cd57bf70ffc5061e0" for 127.0.0.1 at 2016-05-21 18:56:44 +0200
+Processing by Api::RacesController#show as JSON
+  Parameters: {"id"=>"5740934cd57bf70ffc5061e0"}
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
