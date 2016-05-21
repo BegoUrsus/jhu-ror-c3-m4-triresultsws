@@ -1461,3 +1461,21 @@ Processing by Api::RacesController#create as */*
 Can't verify CSRF token authenticity
   Rendered text template (0.0ms)
 Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races" for ::1 at 2016-05-21 14:44:50 +0200
+Processing by Api::RacesController#index as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races" for ::1 at 2016-05-21 14:48:05 +0200
+Processing by Api::RacesController#index as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races" for ::1 at 2016-05-21 14:48:23 +0200
+Processing by Api::RacesController#index as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
