@@ -4,10 +4,21 @@ module Api
 
 		before_action :set_race, only: [:show, :edit, :update, :destroy]
 
+    rescue_from Mongoid::Errors::DocumentNotFound do |exception|
+      @msg = "woops: cannot find race[#{params[:id]}]"
+      if !request.accept || request.accept == "*/*"
+        render plain: @msg, status: :not_found
+      else
+        render action: :error, status: :not_found
+      end
+    end
 
-		rescue_from Mongoid::Errors::DocumentNotFound do |exception|
-			render plain: "woops: cannot find race[#{params[:id]}]", status: :not_found
+    rescue_from ActionView::MissingTemplate do |exception|
+			Rails.logger.debug exception
+      @msg = "woops: we do not support that content-type[#{request.accept}]"
+      render plain: @msg, status: 415
 		end
+
 
 	  # GET /api/races
 	  # GET /api/races.json
@@ -15,8 +26,8 @@ module Api
 			if !request.accept || request.accept == "*/*"
    			render plain: "#{api_races_path}, offset=[#{params[:offset]}], limit=[#{params[:limit]}]", status: :ok
 			else
-				#real implementation ...
-			end
+				#real implementation   			
+  		end
 	  end
 
 	  # GET /api/races/1
@@ -25,8 +36,8 @@ module Api
 			if !request.accept || request.accept == "*/*"
    			render plain: api_race_path(params[:id]), status: :ok
 			else
-				#real implementation ...
-				render json: @race, status: :ok
+      	@race = Race.find(params[:id])
+				render :race, status: :ok
 			end
 	  end
 
@@ -49,10 +60,9 @@ module Api
 	  # PATCH/PUT /api/races/1
 	  # PATCH/PUT /api/races/1.json
 	  def update
-	  	
 	  	# 	Rails.logger.debug("method=#{request.method}")
 	  	# 	request.method can be 'PATCH' or 'PUT'
-
+     	@race = Race.find(params[:id])
 			if @race.update(race_params)
 				render json: @race, status: :ok
 			else
@@ -63,6 +73,7 @@ module Api
 	  # DELETE /api/races/1
 	  # DELETE /api/races/1.json
 	  def destroy
+     	@race = Race.find(params[:id])
 	  	@race.destroy
 	  	render :nothing=>true, :status => :no_content
 	  end
@@ -71,7 +82,7 @@ module Api
 	  private
 			# Use callbacks to share common setup or constraints between actions.
     	def set_race
-      	@race = Race.find(params[:id])
+#	     	@race = Race.find(params[:id])
     	end
 
       # Never trust parameters from the scary internet, only allow the white list through.
