@@ -10,6 +10,10 @@ module Api
 				render plain: api_race_results_path, status: :ok
 			else
 				#real implementation ...
+				@race=Race.find(params[:race_id])
+				@entrants=@race.entrants
+				render action: :entrants
+
 			end
 	  end #index
 
