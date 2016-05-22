@@ -12,6 +12,7 @@ module Api
 				#real implementation ...
 				@race=Race.find(params[:race_id])
 				@entrants=@race.entrants
+				fresh_when last_modified: @entrants.max(:updated_at)
 				render action: :entrants
 
 			end

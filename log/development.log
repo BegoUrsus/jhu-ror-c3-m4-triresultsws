@@ -11847,3 +11847,60 @@ MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.003002s
   Rendered api/results/_result.json.jbuilder (9.0ms)
   Rendered api/results/entrants.json.jbuilder (239.5ms)
 Completed 200 OK in 263ms (Views: 257.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results" for ::1 at 2016-05-22 12:13:47 +0200
+Processing by Api::ResultsController#index as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `max' for nil:NilClass):
+  app/controllers/api/results_controller.rb:13:in `index'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (339.7ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (312.7ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (710.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results" for ::1 at 2016-05-22 12:14:35 +0200
+Processing by Api::ResultsController#index as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.aggregate | STARTED | {"aggregate"=>"results", "pipeline"=>[{"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}, {"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "updated_at"=>{"$exists"=>true}}}, {"$sort"=>{"secs"=>1, "bib"=>1}}, {"$gro...
+MONGODB | localhost:27017 | triresults_development.aggregate | SUCCEEDED | 0.012312s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}, "sort"=>{"secs"=>1, "bib"=>1}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.002985s
+Overwriting existing field _id in class RacerInfo.
+  Rendered api/results/_result.json.jbuilder (35.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (7.0ms)
+  Rendered api/results/entrants.json.jbuilder (251.0ms)
+Completed 200 OK in 317ms (Views: 268.5ms | ActiveRecord: 0.0ms)
