@@ -991,3 +991,11 @@ Missing template api/races/race, application/race with {:locale=>[:en], :formats
   Rendered text template (0.0ms)
 Completed 415 Unsupported Media Type in 11ms (Views: 1.8ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Overwriting existing field _id in class RacerInfo.
+Started GET "/api/races/574172d0d57bf72604e688b7/results/574172d1d57bf72604e68ab1" for 127.0.0.1 at 2016-05-22 10:50:25 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"574172d0d57bf72604e688b7", "id"=>"574172d1d57bf72604e68ab1"}
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction

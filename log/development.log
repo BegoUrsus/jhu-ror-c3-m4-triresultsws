@@ -11386,3 +11386,211 @@ MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"ra
 MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
   Rendered api/races/race.json.jbuilder (0.0ms)
 Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+MONGODB | Se ha anulado una conexión establecida por el software en su equipo host..
+MONGODB | Se ha anulado una conexión establecida por el software en su equipo host..
+MONGODB | No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. - connect(2) for 127.0.0.1:27017
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.005003s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000')}, "sort"=>{"secs"=>1, "bib"=>1}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.015424s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$lt"=>2016-05-22 00:00:00 UTC}}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$lt"=>2016-05-22 00:00:00 UTC}}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.002001s
+Overwriting existing field _id in class RacerInfo.
+
+
+Started GET "/api/races/569a58b8e301d083c3000000/results/569a58bfe301d083c30007f2" for ::1 at 2016-05-22 10:35:07 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c3000000", "id"=>"569a58bfe301d083c30007f2"}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c3000000')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.020015s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000'), "_id"=>BSON::ObjectId('569a58bfe301d083c30007f2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.036989s
+Overwriting existing field _id in class RacerInfo.
+  Rendered api/results/_result.json.jbuilder (38.5ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `racer_place' for #<Entrant:0x3c6af80>):
+     6: json.city @result.city
+     7: json.state @result.state
+     8: json.gender @result.racer_gender
+     9: json.gender_place @result.racer_place
+    10: json.group @result.group_name
+    11: json.group_place @result.group_place
+    12: json.swim format_hours @result.swim_secs
+  app/views/api/results/_result.json.jbuilder:9:in `_app_views_api_results__result_json_jbuilder___1060137394_25553664'
+  app/controllers/api/results_controller.rb:23:in `show'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (350.3ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (344.9ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (750.1ms)
+
+
+Started GET "/api/races/569a58b8e301d083c3000000/results/569a58bfe301d083c30007f2" for ::1 at 2016-05-22 10:38:29 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c3000000", "id"=>"569a58bfe301d083c30007f2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c3000000')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000983s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000'), "_id"=>BSON::ObjectId('569a58bfe301d083c30007f2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001001s
+  Rendered api/results/_result.json.jbuilder (36.2ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `t1' for nil:NilClass):
+    11: json.group_place @result.group_place
+    12: json.swim format_hours @result.swim_secs
+    13: json.pace_100 format_minutes @result.swim_pace_100
+    14: json.t1 @results.t1
+    15: json.bike format_hours @result.bike_secs
+    16: json.mph format_mph @result.bike_mph
+    17: json.t2 @result.t2
+  app/views/api/results/_result.json.jbuilder:14:in `_app_views_api_results__result_json_jbuilder___1060137394_51978300'
+  app/controllers/api/results_controller.rb:23:in `show'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (340.4ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (312.1ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (710.2ms)
+
+
+Started GET "/api/races/569a58b8e301d083c3000000/results/569a58bfe301d083c30007f2" for ::1 at 2016-05-22 10:39:08 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c3000000", "id"=>"569a58bfe301d083c30007f2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c3000000')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000'), "_id"=>BSON::ObjectId('569a58bfe301d083c30007f2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000988s
+  Rendered api/results/_result.json.jbuilder (42.1ms)
+Completed 200 OK in 60ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c3000000/results/569a58bfe301d083c30007f2" for ::1 at 2016-05-22 10:42:47 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c3000000", "id"=>"569a58bfe301d083c30007f2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c3000000')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000502s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000'), "_id"=>BSON::ObjectId('569a58bfe301d083c30007f2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000514s
+  Rendered api/results/_result.json.jbuilder (9.8ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (can't convert LegResult into an exact number):
+    11: json.group_place @result.group_place
+    12: json.swim format_hours @result.swim_secs
+    13: json.pace_100 format_minutes @result.swim_pace_100
+    14: json.t1 format_minutes @result.t1
+    15: json.bike format_hours @result.bike_secs
+    16: json.mph format_mph @result.bike_mph
+    17: json.t2 format_minutes @result.t2
+  app/helpers/application_helper.rb:6:in `format_minutes'
+  app/views/api/results/_result.json.jbuilder:14:in `_app_views_api_results__result_json_jbuilder___1060137394_50396832'
+  app/controllers/api/results_controller.rb:23:in `show'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (345.4ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (311.5ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (711.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c3000000/results/569a58bfe301d083c30007f2" for ::1 at 2016-05-22 10:44:01 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c3000000", "id"=>"569a58bfe301d083c30007f2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c3000000')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000989s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c3000000'), "_id"=>BSON::ObjectId('569a58bfe301d083c30007f2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000988s
+  Rendered api/results/_result.json.jbuilder (4.9ms)
+Completed 200 OK in 23ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"date"=>{"$gte"=>2016-05-22 00:00:00 UTC}}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.00302s
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results/569a58bfe301d083c30009d2" for ::1 at 2016-05-22 10:45:09 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c", "id"=>"569a58bfe301d083c30009d2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000988s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "_id"=>BSON::ObjectId('569a58bfe301d083c30009d2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001001s
+  Rendered api/results/_result.json.jbuilder (14.0ms)
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results/569a58bfe301d083c30009d2" for ::1 at 2016-05-22 10:47:43 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c", "id"=>"569a58bfe301d083c30009d2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "_id"=>BSON::ObjectId('569a58bfe301d083c30009d2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000999s
+  Rendered api/results/_result.json.jbuilder (7.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `secs' for nil:NilClass):
+    1: json.place @result.overall_place
+    2: if @results.secs
+    3: 	json.time format_hours @result.secs
+    4: else
+    5: 	json.time format_hours 0
+  app/views/api/results/_result.json.jbuilder:2:in `_app_views_api_results__result_json_jbuilder___1060137394_47745648'
+  app/controllers/api/results_controller.rb:23:in `show'
+
+
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (339.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (313.2ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered E:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (713.4ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results/569a58bfe301d083c30009d2" for ::1 at 2016-05-22 10:48:22 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c", "id"=>"569a58bfe301d083c30009d2"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "_id"=>BSON::ObjectId('569a58bfe301d083c30009d2')}, "sort"=>{"secs"=>1, "bib"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.000989s
+  Rendered api/results/_result.json.jbuilder (10.0ms)
+Completed 200 OK in 36ms (Views: 15.7ms | ActiveRecord: 0.0ms)

@@ -19,6 +19,8 @@ module Api
 				render plain: api_race_result_path(params[:race_id], params[:id]), status: :ok
 			else
 				#real implementation ...
+				@result=Race.find(params[:race_id]).entrants.where(:id=>params[:id]).first
+				render :partial=>"result", :object=>@result
 			end
 	  end
 
