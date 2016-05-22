@@ -999,3 +999,36 @@ Processing by Api::ResultsController#show as JSON
   Rendered api/results/_result.json.jbuilder (9.0ms)
 Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Overwriting existing field _id in class RacerInfo.
+Started PATCH "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#update as HTML
+  Parameters: {"result"=>{"swim"=>900}, "race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 26ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+Started PATCH "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#update as HTML
+  Parameters: {"result"=>{"t1"=>60}, "race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started PATCH "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#update as HTML
+  Parameters: {"result"=>{"bike"=>2400}, "race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started PATCH "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#update as HTML
+  Parameters: {"result"=>{"t2"=>40}, "race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e"}
+  Rendered text template (1.0ms)
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+Started PATCH "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#update as HTML
+  Parameters: {"result"=>{"run"=>1500}, "race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+Started GET "/api/races/57417bc0d57bf711d86f55e0/results/57417bc1d57bf711d86f576e" for 127.0.0.1 at 2016-05-22 11:28:33 +0200
+Processing by Api::ResultsController#show as JSON
+  Parameters: {"race_id"=>"57417bc0d57bf711d86f55e0", "id"=>"57417bc1d57bf711d86f576e", "result"=>{}}
+  Rendered api/results/_result.json.jbuilder (6.0ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
