@@ -12,10 +12,13 @@ module Api
 				#real implementation ...
 				@race=Race.find(params[:race_id])
 				@entrants=@race.entrants
-				fresh_when last_modified: @entrants.max(:updated_at)
-				render action: :entrants
 
+				#fresh_when last_modified: @entrants.max(:updated_at)
+  			if stale?(last_modified: @entrants.max(:updated_at))
+					render action: :entrants
+				end
 			end
+
 	  end #index
 
 	  # GET api/races/:race_id/results/1

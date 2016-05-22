@@ -11904,3 +11904,47 @@ Overwriting existing field _id in class RacerInfo.
   Rendered api/results/_result.json.jbuilder (7.0ms)
   Rendered api/results/entrants.json.jbuilder (251.0ms)
 Completed 200 OK in 317ms (Views: 268.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results" for ::1 at 2016-05-22 12:24:43 +0200
+Processing by Api::ResultsController#index as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | triresults_development.aggregate | STARTED | {"aggregate"=>"results", "pipeline"=>[{"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}, {"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "updated_at"=>{"$exists"=>true}}}, {"$sort"=>{"secs"=>1, "bib"=>1}}, {"$gro...
+MONGODB | localhost:27017 | triresults_development.aggregate | SUCCEEDED | 0.003019s
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"results", "filter"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}, "sort"=>{"secs"=>1, "bib"=>1}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.003008s
+Overwriting existing field _id in class RacerInfo.
+  Rendered api/results/_result.json.jbuilder (28.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (17.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (8.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (11.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/_result.json.jbuilder (9.0ms)
+  Rendered api/results/entrants.json.jbuilder (264.1ms)
+Completed 200 OK in 320ms (Views: 282.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/races/569a58b8e301d083c300000c/results" for ::1 at 2016-05-22 12:25:42 +0200
+Processing by Api::ResultsController#index as JSON
+  Parameters: {"race_id"=>"569a58b8e301d083c300000c"}
+MONGODB | localhost:27017 | triresults_development.find | STARTED | {"find"=>"races", "filter"=>{"_id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}
+MONGODB | localhost:27017 | triresults_development.find | SUCCEEDED | 0.001014s
+MONGODB | localhost:27017 | triresults_development.aggregate | STARTED | {"aggregate"=>"results", "pipeline"=>[{"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c')}}, {"$match"=>{"race._id"=>BSON::ObjectId('569a58b8e301d083c300000c'), "updated_at"=>{"$exists"=>true}}}, {"$sort"=>{"secs"=>1, "bib"=>1}}, {"$gro...
+MONGODB | localhost:27017 | triresults_development.aggregate | SUCCEEDED | 0.002021s
+Completed 304 Not Modified in 27ms (ActiveRecord: 0.0ms)
